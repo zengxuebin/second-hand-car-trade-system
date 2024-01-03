@@ -1,4 +1,4 @@
-package com.secondhandcar.trade.system;
+package com.secondhand.car.trade.system;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
