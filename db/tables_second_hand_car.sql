@@ -3,7 +3,7 @@
  */
 
 CREATE database IF NOT EXISTS `second_hand_car` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-use `second_hand_car`;
+USE `second_hand_car`;
 
 SET NAMES utf8mb4;
 
