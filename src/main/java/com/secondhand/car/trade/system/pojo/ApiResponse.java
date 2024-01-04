@@ -1,6 +1,6 @@
 package com.secondhand.car.trade.system.pojo;
 
-import com.secondhand.car.trade.system.enums.ResponseCode;
+import com.secondhand.car.trade.system.enums.ResponseCodeEnum;
 
 /**
  * 返回结果集
@@ -37,15 +37,15 @@ public class ApiResponse<T> {
     }
 
     public static <T> ApiResponse<T> success() {
-        return new ApiResponse<>(ResponseCode.SUCCESS.getCode(), ResponseCode.SUCCESS.getMessage());
+        return new ApiResponse<>(ResponseCodeEnum.SUCCESS.getCode(), ResponseCodeEnum.SUCCESS.getMessage());
     }
 
     public static <T> ApiResponse<T> success(T data) {
-        return new ApiResponse<>(ResponseCode.SUCCESS.getCode(), ResponseCode.SUCCESS.getMessage(), data);
+        return new ApiResponse<>(ResponseCodeEnum.SUCCESS.getCode(), ResponseCodeEnum.SUCCESS.getMessage(), data);
     }
 
     public static <T> ApiResponse<T> fail() {
-        return new ApiResponse<>(ResponseCode.FAILURE.getCode(), ResponseCode.FAILURE.getMessage());
+        return new ApiResponse<>(ResponseCodeEnum.FAILURE.getCode(), ResponseCodeEnum.FAILURE.getMessage());
     }
 
     public static <T> ApiResponse<T> fail(Integer code, String message) {
@@ -53,7 +53,7 @@ public class ApiResponse<T> {
     }
 
     public static <T> ApiResponse<T> error() {
-        return new ApiResponse<>(ResponseCode.SUCCESS.getCode(), ResponseCode.ERROR.getMessage());
+        return new ApiResponse<>(ResponseCodeEnum.SUCCESS.getCode(), ResponseCodeEnum.ERROR.getMessage());
     }
 
     public Integer getCode() {

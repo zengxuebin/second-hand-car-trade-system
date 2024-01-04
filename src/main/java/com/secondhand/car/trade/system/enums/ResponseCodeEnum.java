@@ -6,7 +6,7 @@ package com.secondhand.car.trade.system.enums;
  * @author ZengXuebin
  * @since 2024/1/3 20:22
  */
-public enum ResponseCode {
+public enum ResponseCodeEnum {
 
     SUCCESS(200, "操作成功！"),
     FAILURE(201, "操作失败！"),
@@ -31,7 +31,7 @@ public enum ResponseCode {
      */
     private final String message;
 
-    ResponseCode(int code, String message) {
+    ResponseCodeEnum(int code, String message) {
         this.code = code;
         this.message = message;
     }
